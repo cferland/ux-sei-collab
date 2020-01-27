@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 h1 {
   font-family: 'Avenir-Medium';
   font-size: 36px;
@@ -109,3 +108,63 @@ p5 {
   opacity: 100%;
 }
 
+.aboutPosition{
+display: flex;
+margin-left: auto;
+}
+.rightSide{
+  text-align: right;
+  width: 444px;
+  height: 252px;
+}
+.leftSide{
+  justify-content: left;
+}
+.imgClass{
+  width: 636px;
+  height: 400px;
+}
+.ResButton{
+ background-color: rgb(149, 0, 20);
+  width: 249px;
+  height: 48px;
+  text-align: center;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,0.7);
+  padding: 30px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  color: white;
+  padding: 35px;
+}
+
+.copyright {
+  margin-top: 36px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.header-logo {
+  width: 285px;
+}
+
+.icon {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+}
