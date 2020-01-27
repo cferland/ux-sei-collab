@@ -4,11 +4,11 @@ const MenuItem = (props) => {
   return (
     <div className="menuitem">
       <div className="menuitem-title-and-price">
-        <p3>{props.title}</p3>
-        <p3>{props.price}</p3>
+        <p className="p3">{props.title}</p>
+        <p className="p3">{props.price}</p>
       </div>
       <div>
-        <p4 className="menuitem-description">{props.description}</p4>
+        <p className="p4 menuitem-description">{props.description}</p>
       </div>
     </div>
   )

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import OurStory from './components/About';
-import Carousel from './components/Carousel';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
