@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Menu from './components/Menu';
 import Reservation from './components/Reservation';
 import MobileMenu from './components/MobileMenu';
+
 import './App.css';
 
 class App extends Component {
@@ -23,8 +24,6 @@ class App extends Component {
         <Menu />
         <OurStory />
         <Contact />
-        <Reservation />
-
         <Footer />
       </div>
     );

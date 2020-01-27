@@ -72,6 +72,18 @@ p5 {
   line-height: 16px;
 }
 
+.AboutContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-right: auto;
+  margin-left: auto;
+}
+.AboutContainer > div{
+  margin-top: 60px;
+  width: 636px;
+  height: 521px;
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -134,18 +146,65 @@ p5 {
   opacity: 100%;
 }
 
-.aboutPosition{
-display: flex;
-margin-left: auto;
-}
 .rightSide{
-  text-align: right;
   width: 444px;
   height: 252px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-left: 40px;
+  text-align: justify;
+ }
+ .hours{
+   margin-top: 59px;
+ }
+ .border{
+  border-top: 1px solid darkgray;
+ }
+ .imgClass2{
+  width: 636px;
+  height: 400px;
+ }
+.contactContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-right: auto;
+  margin-left: auto;
 }
-.leftSide{
-  justify-content: left;
+.contactContainer > div{
+  margin-top: 60px;
+  margin-bottom: 61px;
+  width: 636px;
+  height: 521px;
 }
+.contactLeft{
+  width: 347px;
+  height: 120px;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 36px;
+  margin-right: 137px;
+  text-align: justify;
+ }
+ .Plocation{
+   height:60px;
+   width:149px;
+   line-height: 20px;
+   letter-spacing: 0px;
+   text-align: left
+ }
+ .PHour{
+  height:120px;
+  width:347px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left
+ }
+ .hoursSet{
+   margin-top: 41px;
+   margin-bottom: 41px;
+ }
 .imgClass{
   width: 636px;
   height: 400px;
@@ -309,5 +368,12 @@ footer {
   }
   .App { 
     overflow-x: hidden;
+  }
+  .menu-section {
+    grid-column-gap: 0;
+    grid-template-columns: repeat(1, 375px);
+  }
+  .menuitem {
+    width: 375px;
   }
 }
