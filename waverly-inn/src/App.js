@@ -18,9 +18,13 @@ class App extends Component {
   render(){
   return (
     <div className="App">
+      <Header />
+
       <OurStory />
       <Contact />
       <Reservation />
+
+      <Footer />
     </div>
   );
 }
