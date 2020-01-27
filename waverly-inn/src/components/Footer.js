@@ -7,14 +7,14 @@ function Footer(props) {
         <img className="logo" src="images/Logo_WaverlyInn_White.png" alt="The Waverly Inn and Garden" />
       </div>
       <div className="copyright">
-        <p4>©2020 The Waverly Inn & Garden.</p4>
-        <p4>All rights reserved.</p4>
+        <p className="p4">©2020 The Waverly Inn & Garden.</p>
+        <p className="p4">All rights reserved.</p>
       </div>
-      <div className="contact">
+      <div className="contact" id="contact">
         <h4>Contact Us</h4>
-        <p4>16 Bank Street, New York, NY 10014</p4>
-        <p4>(917) 828-1154</p4>
-        <p4>fritz@thewaverlyinn.com</p4>
+        <p className="p4">16 Bank Street, New York, NY 10014</p>
+        <p className="p4">(917) 828-1154</p>
+        <p className="p4">fritz@thewaverlyinn.com</p>
       </div>
       <div className="social">
         <h4>Follow Us</h4>

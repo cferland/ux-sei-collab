@@ -40,11 +40,11 @@ class Header extends Component {
           <a href="#about"><h3 className="visible">Our Story</h3></a>
           <img className="header-logo" src="/images/Logo_WaverlyInn_White_Oneline.png" alt="The Waverly Inn" />
           <a href="#hours"><h3 className="visible">Hours</h3></a>
-          <a href="#location"><h3 className="visible">Location</h3></a>
+          <a href="#contact"><h3 className="visible">Location</h3></a>
           <img id="hamburger-icon" src="/images/Icon_Hamburger.svg" onClick={this.handleHamburger} />
         </nav>
         <div id="hamburger-menu">
-          <MobileMenu />
+          <MobileMenu handleHamburger={this.handleHamburger} />
         </div>
         <div className="carousel-wrapper">
           <WaverlyCarousel />

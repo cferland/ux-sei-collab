@@ -4,29 +4,30 @@ import Reservation from '../components/Reservation';
 function Contact() {
 
   return (
-    <div className="border">
+    <div className="border" id="hours">
       <h1 className="hours">LOCATION & HOURS</h1>
       <div className="contactContainer">
+
         <div className="contactLeft">
           <h4>The Waverly Inn</h4>
           <div className="Plocation">
-            <p3>16 Bank Street
+            <p className="p3">16 Bank Street
                         <br />New York, Ny 10014
                         <br />(917)828-1154
-                     </p3>
+                     </p>
           </div>
           <h4>Hours</h4>
           <div className="PHour">
             <div>
-              <p3>Dinner
+              <p className="p3">Dinner
                         <br />Monday-Thursday, Sunday 5:30pm-12am
                         <br />Friday, Saturday 5:30-1am
-                    </p3>
+                    </p>
             </div>
             <div class="hoursSet">
-              <p3>Brunch
+              <p className="p3">Brunch
                         <br />Saturday, Sunday 11am-6pm
-                    </p3>
+                    </p>
             </div>
           </div>
           <Reservation />
@@ -36,6 +37,7 @@ function Contact() {
         </div>
       </div>
     </div>
+
   )
 
 }
