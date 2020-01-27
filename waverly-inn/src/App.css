@@ -233,6 +233,19 @@ footer {
   height: 32px;
 }
 
+.mobile-pic {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: 25px auto;
+}
+
+.mobile-pic img {
+  width: 170px;
+  margin-left: -25px;
+}
+
 @media screen and (max-width: 1140px) {
   .menu-section {
     grid-template-columns: repeat(2, 375px);
