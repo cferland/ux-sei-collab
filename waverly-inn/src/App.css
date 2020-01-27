@@ -8,26 +8,31 @@ h1 {
 }
 
 h2 {
+  font-family: 'Avenir-Heavy';
   font-size: 24px;
   line-height: 32px;
 }
 
 h3 {
+  font-family: 'Avenir-Heavy';
   font-size: 18px;
   line-height: 24px;
 }
 
 h4 {
+  font-family: 'Avenir-Heavy';
   font-size: 16px;
   line-height: 20px;
 }
 
 h5 {
+  font-family: 'Avenir-Heavy';
   font-size: 14px;
   line-height: 18px
 }
 
 h6 {
+  font-family: 'Avenir-Heavy';
   font-size: 12px;
   line-height: 16px;
 }
@@ -99,8 +104,16 @@ p5 {
 .menu-section {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.menu-section-title {
+  width: 1300px;
+  text-align: left;
+  margin-left: 2.5em;
 }
 
 .selected {
@@ -167,4 +180,16 @@ footer {
   background-color: white;
   width: 32px;
   height: 32px;
+}
+
+@media screen and (max-width: 1305px) {
+  .menu-section {
+    max-width: 877px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .menu-section {
+    justify-content: center;
+  }
 }

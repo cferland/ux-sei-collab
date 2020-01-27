@@ -186,39 +186,92 @@ class Menu extends Component {
     }
   }
 
+  toggleCategory = (e) => {
+    // e.target.classList.toggle('selected')
+    const dinnerdiv = document.querySelector('#dinner');
+    const dessertdiv = document.querySelector('#dessert');
+    if (!e.target.classList.contains('selected')) {
+      dinnerdiv.classList.toggle('selected');
+      dessertdiv.classList.toggle('selected');
+
+      if (this.state.selected === "dinner") {
+        this.setState({
+          selected: 'dessert'
+        })
+      } else {
+        this.setState({
+          selected: 'dinner'
+        })
+      }
+    }
+  }
+
   render() {
     return (
       <div className="menu">
+
         <h1 className="menu-title">WINTER MENU</h1>
         <div className="menu-categories">
-          <h2 className="menu-category selected">DINNER</h2>
-          <h2 className="menu-category">DESSERT</h2>
+          <h2 id="dinner" onClick={this.toggleCategory} className="menu-category selected">DINNER</h2>
+          <h2 id="dessert" onClick={this.toggleCategory} className="menu-category">DESSERT</h2>
         </div>
-        <h4>Small Plates</h4>
-        <div className="menu-smallplates menu-section">
-          {this.state.smallPlates.map((item, key) =>
-            <div key={key}>
-              <MenuItem
-                title={item.title}
-                price={item.price}
-                description={item.description}
-              />
+        {this.state.selected === 'dinner' &&
+          <div>
+            <div className="menu-smallplates menu-section">
+              <h4 className="menu-section-title">Small Plates</h4>
+              {this.state.smallPlates.map((item, key) =>
+                <div key={key}>
+                  <MenuItem
+                    title={item.title}
+                    price={item.price}
+                    description={item.description}
+                  />
+                </div>
+              )}
             </div>
-          )}
-        </div>
-        <h4>Large Plates</h4>
-        <div className="menu-largeplates menu-section">
-          {this.state.largePlates.map((item, key) =>
-            <div key={key}>
-              <MenuItem
-                title={item.title}
-                price={item.price}
-                description={item.description}
-              />
+
+            <div className="menu-largeplates menu-section">
+              <h4 className="menu-section-title">Large Plates</h4>
+              {this.state.largePlates.map((item, key) =>
+                <div key={key}>
+                  <MenuItem
+                    title={item.title}
+                    price={item.price}
+                    description={item.description}
+                  />
+                </div>
+              )}
             </div>
-          )}
-        </div>
-      </div>
+
+            <div className="menu-largeplates menu-section">
+              <h4 className="menu-section-title">Sides</h4>
+              {this.state.sides.map((item, key) =>
+                <div key={key}>
+                  <MenuItem
+                    title={item.title}
+                    price={item.price}
+                    description={item.description}
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        }
+        {this.state.selected === "dessert" &&
+          <div className="menu-dessert menu-section">
+            <h4 className="menu-section-title">Dessert</h4>
+            {this.state.desserts.map((item, key) =>
+              <div key={key}>
+                <MenuItem
+                  title={item.title}
+                  price={item.price}
+                  description={item.description}
+                />
+              </div>
+            )}
+          </div>
+        }
+      </div >
     )
   }
 }
