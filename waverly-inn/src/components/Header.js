@@ -30,7 +30,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <nav>
+        <nav className="header-nav">
           <a href="#menu"><h3>Menu</h3></a>
           <a href="#about"><h3>Our Story</h3></a>
           <img className="header-logo" src="/images/Logo_WaverlyInn_White_Oneline.png" alt="The Waverly Inn" />
@@ -38,7 +38,10 @@ class Header extends Component {
           <a href="#location"><h3>Location</h3></a>
           <img id="hamburger-icon" src="/images/Icon_Hamburger.svg" onClick={this.handleHamburger} />
         </nav>
-        <Carousel />
+        <div className="carousel-wrapper">
+          <Carousel />
+        </div>
+
         <div id="header-button">
           <Reservation />
         </div>
