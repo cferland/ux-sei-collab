@@ -56,3 +56,43 @@ p5 {
   font-size: 12px;
   line-height: 16px;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  background-color: rgba(0,0,0,0.7);
+  padding: 30px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  color: white;
+  padding: 35px;
+}
+
+.copyright {
+  margin-top: 36px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.header-logo {
+  width: 285px;
+}
+
+.icon {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+}
