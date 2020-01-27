@@ -71,6 +71,13 @@ p5 {
   display: flex;
   flex-direction: column;
   align-items: space-between;
+  justify-content: center;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-categories {
@@ -81,12 +88,14 @@ p5 {
 .menu-category {
   margin: 0 30px;
   opacity: 50%;
+  cursor: pointer;
 }
 
 .menuitem {
   display: flex;
   flex-direction: column;
   width: 350px;
+  height: 70px;
   text-align: left;
   margin: 16px 40px;
 }
@@ -101,19 +110,27 @@ p5 {
   color: rgb(171, 171, 171);
 }
 
-.menu-section {
+/* .menu-section {
   display: flex;
   flex-wrap: wrap;
   max-width: 1300px;
   margin: 0 auto;
   justify-content: space-between;
   margin-bottom: 2em;
+} */
+
+.menu-section {
+  display: grid;
+  columns: 3;
+  grid-template-columns: repeat(3, 375px);
+  align-items: center;
+  max-width: 1300px;
 }
 
 .menu-section-title {
-  width: 1300px;
+  width: 1125px;
   text-align: left;
-  margin-left: 2.5em;
+  margin-left: 5em;
 }
 
 .selected {
@@ -182,14 +199,20 @@ footer {
   height: 32px;
 }
 
-@media screen and (max-width: 1305px) {
+@media screen and (max-width: 1070px) {
   .menu-section {
-    max-width: 877px;
+    grid-template-columns: repeat(2, 375px);
+  }
+  .menu-section-title {
+    width: 750px;
   }
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 730px) {
   .menu-section {
-    justify-content: center;
+    grid-template-columns: repeat(1, 375px);
+  }
+  .menu-section-title {
+    width: 375px;
   }
 }
