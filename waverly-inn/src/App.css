@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -8,26 +13,31 @@ h1 {
 }
 
 h2 {
+  font-family: 'Avenir-Heavy';
   font-size: 24px;
   line-height: 32px;
 }
 
 h3 {
+  font-family: 'Avenir-Heavy';
   font-size: 18px;
   line-height: 24px;
 }
 
 h4 {
+  font-family: 'Avenir-Heavy';
   font-size: 16px;
   line-height: 20px;
 }
 
 h5 {
+  font-family: 'Avenir-Heavy';
   font-size: 14px;
   line-height: 18px
 }
 
 h6 {
+  font-family: 'Avenir-Heavy';
   font-size: 12px;
   line-height: 16px;
 }
@@ -78,6 +88,13 @@ p5 {
   display: flex;
   flex-direction: column;
   align-items: space-between;
+  justify-content: center;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu-categories {
@@ -88,14 +105,16 @@ p5 {
 .menu-category {
   margin: 0 30px;
   opacity: 50%;
+  cursor: pointer;
 }
 
 .menuitem {
   display: flex;
   flex-direction: column;
   width: 350px;
+  height: 70px;
   text-align: left;
-  margin: 16px 40px;
+  margin: 10px 0;
 }
 
 .menuitem-title-and-price{
@@ -109,10 +128,17 @@ p5 {
 }
 
 .menu-section {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1440px;
-  margin: 0 auto;
+  display: grid;
+  grid-column-gap: 8px;
+  grid-template-columns: repeat(3, 375px);
+  align-items: center;
+  max-width: 1300px;
+}
+
+.menu-section-title {
+  width: 1141px;
+  text-align: left;
+  
 }
 
 .selected {
@@ -130,6 +156,7 @@ p5 {
   text-align: justify;
  }
  .hours{
+   text-align: center;
    margin-top: 59px;
  }
  .border{
@@ -158,19 +185,19 @@ p5 {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 36px;
-  margin-right: 137px;
+  margin-right: 40px;
   text-align: justify;
  }
  .Plocation{
    height:60px;
-   width:149px;
+   /* width:149px; */
    line-height: 20px;
    letter-spacing: 0px;
    text-align: left
  }
  .PHour{
   height:120px;
-  width:347px;
+  /* width:347px; */
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left
@@ -184,11 +211,40 @@ p5 {
   height: 400px;
 }
 .ResButton{
- background-color: rgb(149, 0, 20);
+  background-color: #750131;
   width: 249px;
   height: 48px;
   text-align: center;
+  margin-top:41px;
+  margin-bottom: 81px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Avenir-Heavy";
+  color: white;
+  border: 0;
 }
+
+.ResButton:hover {
+  cursor: pointer;
+}
+
+header .ResButton {
+  width: 100%;
+  margin: 0;
+}
+
+#header-button {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+} 
+
+.header-nav {
+  z-index: 6;
+}
+
 a{
   color: white;
   text-decoration: none;
@@ -199,7 +255,28 @@ nav {
   justify-content: space-evenly;
   background-color: rgba(0,0,0,0.7);
   padding: 30px;
+  position: fixed;
+  width: 100%;
+  margin: 0;
 }
+
+.carousel {
+  width: 100%;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  padding: 0;
+}
+
+.carousel img {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+/* .carousel-wrapper {
+  width:100vw;
+  height: 95vh;
+} */
 
 footer {
   background-color: black;
@@ -226,4 +303,72 @@ footer {
   background-color: white;
   width: 32px;
   height: 32px;
+}
+
+.mobile-pic {
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: 25px auto;
+}
+
+.mobile-pic img {
+  width: 170px;
+  margin-left: -25px;
+}
+
+@media screen and (max-width: 1140px) {
+  .menu-section {
+    grid-template-columns: repeat(2, 375px);
+  }
+  .menu-section-title {
+    width: 758px;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .menu-section {
+    grid-template-columns: repeat(1, 375px);
+  }
+  .menu-section-title {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contactContainer{
+    flex-direction: column;
+    width: 375px;;
+  }
+  .AboutContainer{
+    flex-direction: column;
+    width: 375px;
+  }
+  .imgClass{
+   justify-items: center;
+  }
+  .imgClass2{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .rightSide{
+  text-align: center;
+
+   }
+  .contactLeft{
+    text-align: center;
+  } 
+  .PHour{
+    text-align: center;
+  }
+  .Plocation{
+    text-align: center;
+  }
+  .hours{
+    text-align: center;
+  }
+  .border{
+    width: 100%;
+  }
 }
