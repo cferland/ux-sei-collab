@@ -21,6 +21,8 @@ class App extends Component {
       <Header />
 
       <OurStory />
+      <Contact />
+      <Reservation />
 
       <Footer />
     </div>
