@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Reservation from './Reservation';
-import Carousel from './Carousel';
+import WaverlyCarousel from './WaverlyCarousel';
 
 class Header extends Component {
   constructor(props) {
@@ -20,7 +20,7 @@ class Header extends Component {
           <a href="#location"><h3>Location</h3></a>
         </nav>
         <div className="carousel-wrapper">
-          <Carousel />
+          <WaverlyCarousel />
         </div>
 
         <div id="header-button">
