@@ -1,6 +1,58 @@
-<<<<<<< HEAD
-=======
 .App {
   text-align: center;
 }
->>>>>>> b4eb724d81f005c3df684b97818f8dc75e3277ac
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 18px
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+p1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+p2 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+p4 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p5 {
+  font-size: 12px;
+  line-height: 16px;
+}
