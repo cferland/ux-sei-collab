@@ -56,17 +56,24 @@ p5 {
   line-height: 16px;
 }
 
-.aboutPosition{
-display: flex;
-margin-left: auto;
+.AboutContainer{
+  display: flex;
+ justify-content: center;
+  flex-direction: row-reverse;
+  margin-right: auto;
+  margin-left: auto;
 }
 .rightSide{
-  text-align: right;
+ text-align: right;
   width: 444px;
   height: 252px;
+  padding: 40px 40px 40px 40px;
+  line-break: auto;
+  line-height: 36px;
 }
 .leftSide{
-  justify-content: left;
+
+  padding: 40px 40px 40px 40px;
 }
 .imgClass{
   width: 636px;
