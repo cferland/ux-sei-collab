@@ -18,7 +18,7 @@ class App extends Component {
   render(){
   return (
     <div className="App">
-       <Route path="/about" render={() => <OurStory />} />
+      <OurStory />
     </div>
   );
 }
