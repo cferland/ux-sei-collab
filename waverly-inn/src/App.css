@@ -56,3 +56,11 @@ p5 {
   font-size: 12px;
   line-height: 16px;
 }
+
+.logo {
+  width: 120px;
+}
+
+.header-logo {
+  width: 285px;
+}

@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <footer>
       <div className="footer-img">
-        <img src="images/Logo_WaverlyInn_White.png" alt="The Waverly Inn and Garden" />
+        <img className="logo" src="images/Logo_WaverlyInn_White.png" alt="The Waverly Inn and Garden" />
       </div>
       <div className="copyright">
         <p4>©2020 The Waverly Inn & Garden. All rights reserved.</p4>
