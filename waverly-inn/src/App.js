@@ -21,7 +21,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <MobileMenu />
         <Menu />
         <OurStory />
         <Contact />
