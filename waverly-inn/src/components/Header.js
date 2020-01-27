@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Reservation from './Reservation';
-import Carousel from './Carousel';
+import WaverlyCarousel from './WaverlyCarousel';
 import MobileMenu from './MobileMenu';
 
 class Header extends Component {
@@ -47,7 +47,7 @@ class Header extends Component {
           <MobileMenu />
         </div>
         <div className="carousel-wrapper">
-          <Carousel />
+          <WaverlyCarousel />
         </div>
 
         <div id="header-button">
