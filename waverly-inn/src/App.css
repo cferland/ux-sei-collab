@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -146,11 +151,34 @@ margin-left: auto;
   height: 400px;
 }
 .ResButton{
- background-color: rgb(149, 0, 20);
+  background-color: #750131;
   width: 249px;
   height: 48px;
   text-align: center;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Avenir-Heavy";
+  color: white;
+  border: 0;
 }
+
+.ResButton:hover {
+  cursor: pointer;
+}
+
+header .ResButton {
+  width: 100%;
+  margin: 0;
+}
+
+#header-button {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 a{
   color: white;
   text-decoration: none;
@@ -161,6 +189,21 @@ nav {
   justify-content: space-evenly;
   background-color: rgba(0,0,0,0.7);
   padding: 30px;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+}
+
+.carousel {
+  width: 100%;
+  margin-bottom: -5px;
+  margin-top: -5px;
+  padding: 0;
+}
+
+.carousel img {
+  width: 100%;
+  margin: 0;
 }
 
 footer {
