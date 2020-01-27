@@ -1,4 +1,4 @@
-import React, {Component } from 'react';
+import React, { Component } from 'react';
 import OurStory from './components/About';
 import Carousel from './components/Carousel';
 import Contact from './components/Contact';
