@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
+import './fonts/AveniBoo'
+import './fonts/AveniHea'
+import './fonts/AveniMed'
 
 ReactDOM.render(
   <Router><App /></Router>, document.getElementById('root'));
