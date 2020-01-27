@@ -259,17 +259,19 @@ footer {
 
 #hamburger-icon {
   display: none;
+  
 }
 
 #hamburger-menu {
   display: none;
   position: fixed;
-  top: 90px;
+  top: 92px;
   width: 100%;
   height: 100%;
   background-color: white;
   z-index: 99;
   overflow-y: hidden;
+  transition: display 3s ease-in;
 }
 
 .stop-scroll {
@@ -301,7 +303,6 @@ footer {
   }
   #hamburger-icon {
     display: block;
-    margin-left: 40px;
   }
   nav {
     justify-content: left;
