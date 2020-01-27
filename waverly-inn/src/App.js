@@ -9,24 +9,25 @@ import Reservation from './components/Reservation';
 import './App.css';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
 
     }
   }
-  render(){
-  return (
-    <div className="App">
-      <Header />
+  render() {
+    return (
+      <div className="App">
+        <Header />
 
-      <OurStory />
-      <Contact />
-      <Reservation />
+        <Menu />
+        <OurStory />
+        <Contact />
+        <Reservation />
 
-      <Footer />
-    </div>
-  );
-}
+        <Footer />
+      </div>
+    );
+  }
 }
 export default App;

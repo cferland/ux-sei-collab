@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: local('Avenir-Medium'), url(./fonts/AveniMed) format('truetype');
+}
+@font-face {
+  font-family: 'Avenir-Book';
+  src: local('Avenir-Book'), url(./fonts/AveniBoo) format('truetype');
+}
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: local('Avenir-Heavy'), url(./fonts/AveniHea) format('truetype');
+}
