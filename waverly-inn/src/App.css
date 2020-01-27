@@ -368,4 +368,11 @@ footer {
   .App { 
     overflow-x: hidden;
   }
+  .menu-section {
+    grid-column-gap: 0;
+    grid-template-columns: repeat(1, 375px);
+  }
+  .menuitem {
+    width: 375px;
+  }
 }
