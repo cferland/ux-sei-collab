@@ -97,7 +97,7 @@ p5 {
   width: 350px;
   height: 70px;
   text-align: left;
-  margin: 16px 40px;
+  margin: 10px 0;
 }
 
 .menuitem-title-and-price{
@@ -110,27 +110,18 @@ p5 {
   color: rgb(171, 171, 171);
 }
 
-/* .menu-section {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1300px;
-  margin: 0 auto;
-  justify-content: space-between;
-  margin-bottom: 2em;
-} */
-
 .menu-section {
   display: grid;
-  columns: 3;
+  grid-column-gap: 8px;
   grid-template-columns: repeat(3, 375px);
   align-items: center;
   max-width: 1300px;
 }
 
 .menu-section-title {
-  width: 1125px;
+  width: 1141px;
   text-align: left;
-  margin-left: 5em;
+  
 }
 
 .selected {
@@ -199,16 +190,16 @@ footer {
   height: 32px;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1140px) {
   .menu-section {
     grid-template-columns: repeat(2, 375px);
   }
   .menu-section-title {
-    width: 750px;
+    width: 758px;
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 815px) {
   .menu-section {
     grid-template-columns: repeat(1, 375px);
   }
