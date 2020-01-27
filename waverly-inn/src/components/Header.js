@@ -6,7 +6,7 @@ function Header(props) {
       <nav>
         <a href="#menu">Menu</a>
         <a href="#about">Our Story</a>
-        <img src="../public/images/Logo_WaverlyInn_White_Oneline.png" />
+        <img src="/images/Logo_WaverlyInn_White_Oneline.png" alt="The Waverly Inn" />
         <a href="#hours">Hours</a>
         <a href="#location">Location</a>
       </nav>
