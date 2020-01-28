@@ -311,7 +311,7 @@ footer {
   width: 120px;
   height: 120px;
   overflow: hidden;
-  margin: 25px auto;
+  margin: 50px auto;
 }
 
 .mobile-pic img {
@@ -326,7 +326,7 @@ footer {
 #hamburger-menu {
   display: none;
   position: fixed;
-  top: 92px;
+  top: 50px;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -409,9 +409,21 @@ footer {
   }
   #hamburger-icon {
     display: block;
+    position: fixed;
+    right: 10px;
+    top: 8px;
   }
+  
   nav {
     justify-content: left;
+  }
+  .header-nav {
+    height: 30px;
+    padding: 10px;
+  }
+  .header-logo {
+    width: initial;
+    height: 30px;
   }
   .App { 
     overflow-x: hidden;

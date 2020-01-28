@@ -207,7 +207,7 @@ class Menu extends Component {
 
   render() {
     return (
-      <div id="menu" className="menu">
+      <div className="menu">
 
         <h1 className="menu-title">WINTER MENU</h1>
         <div className="menu-categories">
