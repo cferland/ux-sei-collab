@@ -49,7 +49,7 @@ class Header extends Component {
         <div className="carousel-wrapper">
           <WaverlyCarousel />
         </div>
-
+        <div id="menu"></div>
         <div id="header-button">
           <Reservation />
         </div>

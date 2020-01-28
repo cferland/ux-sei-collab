@@ -2,8 +2,8 @@ import React from "react";
 const OurStory = () => {
 
   return (
-    <div className="border">
-      <h1 className="hours" id="about">OUR STORY</h1>
+    <div className="border" id="about">
+      <h1 className="hours">OUR STORY</h1>
       <div className="AboutContainer">
         <div className="leftSide" >
           <img className="imgClass" src='/images/WaverlyInn_Interior_02.png' alt="waverlyinterior2"></img>
