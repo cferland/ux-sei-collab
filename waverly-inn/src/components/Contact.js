@@ -8,7 +8,7 @@ function Contact() {
       <h1 className="hours">LOCATION & HOURS</h1>
       <div className="contactContainer">
 
-        <div className="contactLeft">
+        <div className="rightSide">
           <h4>The Waverly Inn</h4>
           <div className="Plocation">
             <p className="p3">16 Bank Street
@@ -32,7 +32,7 @@ function Contact() {
           </div>
           <Reservation />
         </div>
-        <div className="contactRight">
+        <div className="leftSide">
           <img className="imgClass2" src='/images/WaverlyInn_Map.png' alt="waverlyinterior2"></img>
         </div>
       </div>
