@@ -187,7 +187,6 @@ class Menu extends Component {
   }
 
   toggleCategory = (e) => {
-    // e.target.classList.toggle('selected')
     const dinnerdiv = document.querySelector('#dinner');
     const dessertdiv = document.querySelector('#dessert');
     if (!e.target.classList.contains('selected')) {
