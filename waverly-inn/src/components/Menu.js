@@ -54,7 +54,7 @@ class Menu extends Component {
         {
           title: "Cheese plate",
           price: "$23",
-          description: "Monte Enebro goat, Mistoa sheep, Arethusa blue cow, memimo marcona almonds, walnut raisin bread"
+          description: "Monte Enebro goat, Mistoa sheep, Arethusa blue cow, memimo almonds, walnut raisin bread"
         },
       ],
       largePlates: [
