@@ -333,6 +333,36 @@ footer {
   overflow-y: hidden;
 }
 
+#menu {
+  position: absolute;
+  bottom: 70px;
+}
+
+#about {
+  position: relative;
+  top: -120px;
+}
+
+#hours {
+  position: relative;
+  top: -120px;
+}
+
+#menu-mobile {
+  position: relative;
+  top: -45px;
+}
+
+#about-mobile {
+  position: relative;
+  top: -45px;
+}
+
+#hours-mobile {
+  position: relative;
+  top: -45px;
+}
+
 @media screen and (max-width: 1140px) {
   .menu-section {
     grid-template-columns: repeat(2, 350px);
@@ -449,7 +479,6 @@ footer {
   footer {
     flex-flow: column;
     justify-content: left;
-    text-align: left;
   }
   .AboutContainer > .rightSide > p {
     margin: 0 10px;

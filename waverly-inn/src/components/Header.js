@@ -42,7 +42,7 @@ class Header extends Component {
             <img className="header-logo" src="/images/Logo_WaverlyInn_White_Oneline.png" alt="The Waverly Inn" />
           </div>
           <a href="#hours"><h3 className="visible">Hours</h3></a>
-          <a href="#contact"><h3 className="visible">Location</h3></a>
+          <a href="#hours"><h3 className="visible">Location</h3></a>
           <img id="hamburger-icon" src="/images/Icon_Hamburger.svg" alt="hamburgericon" onClick={this.handleHamburger} />
         </nav>
         <div id="hamburger-menu">

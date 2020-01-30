@@ -21,6 +21,7 @@ function Footer(props) {
         <div className="icon"><a target="_blank" href="https://www.facebook.com/pages/Waverly-Inn/121071064574087" rel="noopener noreferrer"><img src="/images/Icon_Facebook.svg" alt="Facebook" /></a></div>
         <div className="icon"><a target="_blank" href="https://www.instagram.com/explore/locations/387124/waverly-inn/?hl=en" rel="noopener noreferrer"><img src="/images/Icon_Instagram.svg" alt="Instagram" /></a></div>
       </div>
+      <div id="contact-mobile"></div>
     </footer>
   )
 }

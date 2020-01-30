@@ -2,7 +2,9 @@ import React from "react";
 const OurStory = () => {
 
   return (
-    <div className="border" id="about">
+    <div className="border">
+      <div id="about"></div>
+      <div id="about-mobile"></div>
       <h1 className="hours">OUR STORY</h1>
       <div className="AboutContainer">
         <div className="leftSide" >

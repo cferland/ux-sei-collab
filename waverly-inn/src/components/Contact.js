@@ -4,7 +4,9 @@ import Reservation from '../components/Reservation';
 function Contact() {
 
   return (
-    <div className="border" id="hours">
+    <div className="border">
+      <div id="hours"></div>
+      <div id="hours-mobile"></div>
       <h1 className="hours">LOCATION & HOURS</h1>
       <div className="contactContainer">
 
