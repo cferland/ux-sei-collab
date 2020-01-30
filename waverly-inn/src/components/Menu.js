@@ -189,9 +189,9 @@ class Menu extends Component {
   toggleCategory = (e) => {
     const dinnerdiv = document.querySelector('#dinner');
     const dessertdiv = document.querySelector('#dessert');
-    if (!e.target.classList.contains('selected')) {
-      dinnerdiv.classList.toggle('selected');
-      dessertdiv.classList.toggle('selected');
+    if (!e.target.classList.contains('menu-category-selected')) {
+      dinnerdiv.classList.toggle('menu-category-selected');
+      dessertdiv.classList.toggle('menu-category-selected');
 
       if (this.state.selected === "dinner") {
         this.setState({
@@ -211,7 +211,7 @@ class Menu extends Component {
 
         <h1 className="menu-title">WINTER MENU</h1>
         <div className="menu-categories">
-          <h2 id="dinner" onClick={this.toggleCategory} className="menu-category selected">DINNER</h2>
+          <h2 id="dinner" onClick={this.toggleCategory} className="menu-category menu-category-selected">DINNER</h2>
           <h2 id="dessert" onClick={this.toggleCategory} className="menu-category">DESSERT</h2>
         </div>
         {this.state.selected === 'dinner' &&
