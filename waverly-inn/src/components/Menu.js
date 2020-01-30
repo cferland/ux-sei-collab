@@ -208,7 +208,7 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu">
-
+        <div id="menu-mobile"></div>
         <h1 className="menu-title">WINTER MENU</h1>
         <div className="menu-categories">
           <h2 id="dinner" onClick={this.toggleCategory} className="menu-category menu-category-selected">DINNER</h2>
