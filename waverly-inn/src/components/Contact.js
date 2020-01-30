@@ -35,7 +35,7 @@ function Contact() {
           <Reservation />
         </div>
         <div className="leftSide">
-          <img className="imgClass2" src='/images/WaverlyInn_Map.png' alt="waverlyinterior2"></img>
+          <a target="_blank" href="https://goo.gl/maps/PREBKxHGSdD1h4598"><img className="imgClass2" src='/images/WaverlyInn_Map.png' alt="waverlyinterior2"></img></a>
         </div>
       </div>
     </div>
