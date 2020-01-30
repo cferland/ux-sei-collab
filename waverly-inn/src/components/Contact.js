@@ -1,5 +1,6 @@
 import React from 'react';
 import Reservation from '../components/Reservation';
+import { showLocation } from 'react-native-map-link'
 
 function Contact() {
 
