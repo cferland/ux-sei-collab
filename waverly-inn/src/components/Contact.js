@@ -1,11 +1,12 @@
 import React from 'react';
 import Reservation from '../components/Reservation';
-import { showLocation } from 'react-native-map-link'
 
 function Contact() {
 
   return (
-    <div className="border" id="hours">
+    <div className="border">
+      <div id="hours"></div>
+      <div id="hours-mobile"></div>
       <h1 className="hours">LOCATION & HOURS</h1>
       <div className="contactContainer">
 
@@ -34,7 +35,7 @@ function Contact() {
           <Reservation />
         </div>
         <div className="leftSide">
-          <img className="imgClass2" src='/images/WaverlyInn_Map.png' alt="waverlyinterior2"></img>
+          <a target="_blank" href="https://goo.gl/maps/PREBKxHGSdD1h4598"><img className="imgClass2" src='/images/WaverlyInn_Map.png' alt="waverlyinterior2"></img></a>
         </div>
       </div>
     </div>

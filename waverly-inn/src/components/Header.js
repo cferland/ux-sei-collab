@@ -38,10 +38,12 @@ class Header extends Component {
         <nav className="header-nav">
           <a href="#menu"><h3 className="visible">Menu</h3></a>
           <a href="#about"><h3 className="visible">Our Story</h3></a>
-          <img className="header-logo" src="/images/Logo_WaverlyInn_White_Oneline.png" alt="The Waverly Inn" />
+          <div className="logo-container">
+            <img className="header-logo" src="/images/Logo_WaverlyInn_White_Oneline.png" alt="The Waverly Inn" />
+          </div>
           <a href="#hours"><h3 className="visible">Hours</h3></a>
-          <a href="#contact"><h3 className="visible">Location</h3></a>
-          <img id="hamburger-icon" src="/images/Icon_Hamburger.svg" onClick={this.handleHamburger} />
+          <a href="#hours"><h3 className="visible">Location</h3></a>
+          <img id="hamburger-icon" src="/images/Icon_Hamburger.svg" alt="hamburgericon" onClick={this.handleHamburger} />
         </nav>
         <div id="hamburger-menu">
           <MobileMenu handleHamburger={this.handleHamburger} />
